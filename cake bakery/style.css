@@ -1,0 +1,674 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Uchen', serif;
+    font-family: Dancing Script;
+    
+}
+
+body  {
+    background-color: black;
+}
+
+.all-content{
+    background: black;
+    /* width: 100%; */
+}
+/* navbar */
+#navbar{
+    background-color: rgba(0, 0, 0, 0.692);
+    padding-left: 60px;
+    font-weight: bold;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+#logo{
+    font-size: 43px;
+    color: white;
+    font-family: Dancing Script;
+}
+
+.A {
+    color: red;
+}
+#logo img{
+    margin-bottom: 15px;
+}
+.navbar-nav{
+    margin-left: 150px;
+}
+.nav-link{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 15px;
+    transition: 0.5s ease;
+    font-size: 20px;
+    
+}
+.nav-link:hover{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+.icons{
+    margin-right: 50px;
+}
+.icon-card{
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.icon-card:hover{
+    transform: translateY(-5px);
+    color: red;
+}
+@media screen and (max-width:330px){
+    #logo{
+        font-size: 15px;
+    }
+}
+/* navbar end */
+/* home section */
+.home{
+    width: 100%;
+    height: 88.5vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./img/a-1.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+.home .img{
+    flex: 1 1 400px;
+}
+.home .img img{
+    width: 100%;
+}
+.home .content{
+    flex: 1 1 400px;
+    margin-left: 60px;
+}
+.content h3{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.content h2{
+    font-size: 60px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+.changecontent::after{
+    content: ' ';
+    color: red;
+    animation: changetext 10s infinite linear;
+    font-weight: bold;
+}
+@keyframes changetext{
+    0%{content: " Shrinroq";}
+    20%{content: " Ko`proq";}
+    50%{content: " Betakror";}
+    60%{content: " Yorqinroq";}
+    100%{content: " Quvonchli";}
+}
+.content p{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    font-size: 25px;
+}
+.content .btn{
+    width: 110px;
+    height: 38px;
+    background-color: red;
+    color: white;
+}
+@media screen and (max-width:800px){
+    .content h3{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:860px){
+    .home{
+        height: 120vh;
+    }
+}
+@media screen and (max-width:560px){
+    .home{
+        height: 100vh;
+    }
+}
+@media screen and (max-width:330px){
+    .content h2{
+        font-size: 30px;
+    }
+    .content h3{
+        font-size: 30px;
+    }
+}
+/* home section end */
+
+/* top cards */
+#box{
+    margin-top: 50px;
+}
+#box .card{
+    box-shadow: 0px 0px 5px black;
+    margin-top: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#box .card:hover{
+    transform: translateY(-10px);
+}
+/* top cards end */
+/* banner */
+.banner{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./img/big-d.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px black;
+    margin-top: 0px;
+}
+.banner .img{
+    flex: 1 1 400px;
+}
+.banner .img img{
+    width: 100%;
+}
+
+.p-01 {
+    font-size: 18px;
+}
+
+.banner .content{
+    flex: 1 1 400px;
+    margin-left: 60px;
+    margin-top: 60px;
+}
+.banner .content h3{
+    color: white;
+    font-weight: bold;
+}
+.banner .content h2{
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.banner .content p{
+    color: white;
+    font-size: 25px;
+}
+#btnorder button{
+    width: 150px;
+    height: 32px;
+    letter-spacing: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media screen and (max-width:800px){
+    .banner .content h3{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:855px){
+    .banner{
+        height: 100vh;
+    }
+}
+/* banner end */
+/* product cards */
+#product-cards h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgba(161,109,14,1);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgba(161,109,14,1);
+}
+#product-cards .card {
+    background-color: rgba(161,109,14,1);
+    box-shadow: 0 0 3px black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.overlay {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+}
+#product-cards .card:hover .overlay {
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s ease;
+}
+.overlay i img {
+    background-color: #2e1700;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    padding: 7px;
+    margin: -20%;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+.overlay .btn-secondary {
+    background: transparent !important;
+    border: none;
+    box-shadow: none;
+}
+#product-cards h3 {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+.star .checked {
+     color: yellow;
+}
+#product-cards p {
+    color: #2e1700;
+    font-weight: bold;
+}
+#product-cards h6 {
+    font-size: 20px;
+    color: #2e1700;
+    font-weight: bold;
+}
+#product-cards h6 span button {
+    width: 100px;
+    height: 26px;
+    font-size: 15px;
+    background: transparent;
+    letter-spacing: 3px;
+    border: 2px solid #573818;
+    border-radius: 5px;
+    float: right;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#product-cards h6 span button:hover {
+    background-color: #2e1700;
+    color: white;
+}
+
+/* product cards end */
+
+/* gallary */
+#gallary {
+    margin-top: 50px;
+}
+#gallary h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid white;
+}
+#gallary .card {
+    box-shadow: 3px 3px 3px black;
+    cursor: pointer;
+}
+#gallary .overlay {
+    opacity: 0;
+    width: 100%;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border: none;
+}
+#gallary .card:hover .overlay {
+    opacity: 5;
+    margin-top: 20%;
+    transition: 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.664);
+}
+/* gallary */
+
+/* about */
+#about {
+    margin-top: 50px;
+}
+#about h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid white;
+}
+#about .card {
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
+}
+#about p{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+#bt button {
+    width: 150px;
+    height: 32px;
+    letter-spacing: 3px;
+    background-color: red;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+@media screen and (max-width:1000px) {
+    #about p {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:760px) {
+    #about p {
+        font-size: 20px;
+    }
+}
+/* about */
+
+/* contact */
+#contact {
+    margin-top: 100px;
+}
+#contact h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid white;
+}
+#contact input {
+    background-color: white;
+}
+#contact input::placeholder {
+    color: red;
+}
+#contact textarea {
+    background-color: white;
+}
+#contact textarea::placeholder {
+    color: red;
+}
+#messagebtn {
+    text-align: center;
+}
+#messagebtn button {
+    width: 200px;
+    height: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#messagebtn button:hover {
+    background-color: red;
+}
+/* contact */
+
+/* footer */
+#footer {
+    width: 100%;    
+    background-color: rgba(255, 255, 255, 0.103);
+    box-shadow: 0px 0px 5px black;
+    margin-top: 100px;
+    padding: 30px;
+}
+#footer h1 {
+    color: white;
+    padding-top: 30px;
+}
+#footer p {
+    color: white;
+}
+.icons i {
+    /* background-color: white; */
+    color: white;
+    border-radius: 10px;
+    padding: 6px;
+    font-size: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.icons i:hover {
+    background-color: red;
+    color: white;
+}
+.copyright {
+    color: white;
+    margin-top: 20px;
+}
+.credite {
+    color: white;
+}
+/* footer */
+html {
+    scroll-behavior: smooth;
+}
+.arrow {
+    position: fixed;
+    background-color: red;
+    border-radius: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* MENU */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*,
+*::after {
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+:root {
+    --after-content:'2';
+}
+
+body {
+    width:100vw;
+    font-family: 'Lato', sans-serif;
+}
+header {
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    height:12vh;
+    background-color: rgba(0, 0, 0, 0.267);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+h1 {
+    color: #fff;
+}
+
+
+.cart-box {
+    width:26% !important;
+    position: absolute;
+    left:72%;
+    top:25%;
+    /* border:solid 1px blue; */
+    padding:10px 20px;
+}
+h2 {
+    font-size: x-large;
+    padding:15px 10px;
+}
+
+.cart-wrapper {
+    overflow-y: auto;
+    max-height: 350px;
+    width:24vw;
+}
+.subtotal {
+    text-align: right;
+    padding:5%;
+}
+.checkout, .view-cart {
+    width:95%;
+    text-align: center;
+    cursor: pointer;
+    background-color: brown;
+    font-size: large;
+    color: #fff;
+    margin:10px auto;
+    padding:10px 15px;
+}
+.view-cart {
+    background-color: #fff;
+    border: 2px solid brown;
+    color: brown;
+}
+.cart-icon {
+    text-align: right;
+}
+
+.cart-item {
+  display:grid;
+  grid-template-columns: 3fr 6fr 1fr;
+  padding:5% 2%;
+  border-bottom:solid 1px lightgray;  
+}
+
+.cart-item img {
+    width:100%;
+}
+.cart-item .details {
+    padding-left:10%;
+}
+
+.cart-item h3 {
+  text-align: left; 
+  margin-bottom:5%; 
+}
+
+.cart-item .price {
+display: block;
+text-align: right;
+margin-top: 35%; 
+  }
+  
+ .quantity {
+     display: block;
+     margin-top:5%;
+ } 
+
+ .fa-window-close {
+     color: brown;
+ }
+ .cancel {
+     text-align: right;
+ }
+ .whole-cart-window {
+     border: solid lightgray 1px;
+     border-top:none;
+     position: fixed;
+     top:12vh;
+     background-color: #fff;
+     margin-right:2%;
+ }
+
+ .hide {
+     display: none;
+ }
+.non-empty::after {
+  content: var(--after-content);
+  font-size: 25px;
+  width:25px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top:-20px;
+  right:20%;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    height:600px;
+    justify-content: center;
+    align-items: center;
+}
+.card-item img {
+    width:45%;
+}
+.card-item .details {
+    text-align: center;    
+}
+.card-item p,.card-item h3 {
+    margin-top:10px;   
+}
+.card-item span {
+    display: block;
+    margin-top:10px;
+}
+.add-to-cart-btn {
+    width: fit-content;
+    margin:auto;
+    /* margin-top:10px; */
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: brown;
+    border-radius: 3px;
+    font-size: large;
+    color:#fff
+}
+
+.section-3 {
+    margin-right: 60px;
+    text-align: center;
+    background-color: #efeee82a;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+  
+  .section-3 img {
+    width: 15%;
+  }
+  
+  .section-3 .top-1 {
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/8f27d68390.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  
+      <title>Cake Bakery</title>
+  </head>
+  <body>
+    <header>
+      <a class="navbar-brand" href="../index.html" id="logo"><img src="../image/logo.png" alt="" width="50px"><span class="A">A</span>natasam</a>
+      <div class="cart-box">
+        <div class="cart-icon">
+          <i class="fas fa-cart-arrow-down fa-2x"></i>
+        </div>
+        <div class="whole-cart-window hide">
+          <h2>Shopping Bag</h2>
+          <div class="cart-wrapper">
+            <!-- <div class="cart-item">
+                       <img src="\img\pic5.jpeg"> 
+                       <div class="details">
+                           <h3>Item Name</h3>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            <span class="quantity">Quantity: 1</span>
+                               <span class="price">Price: $23.44</span>
+                           </p>
+                       </div>
+                       <div class="cancel"><i class="fas fa-window-close"></i></div>
+                    </div> -->
+            <!-- item 2 -->
+            <!-- <div class="cart-item">
+                        <img src="\img\pic5.jpeg"> 
+                        <div class="details">
+                            <h3>Item Name</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                             <span class="quantity">Quantity: 1</span>
+                                <span class="price">Price: $23.44</span>
+                            </p>
+                        </div>
+                        <div class="cancel"><i class="fas fa-window-close"></i></div>
+                     </div> -->
+          </div>
+          <div class="subtotal">Subtotal: $0.00</div>
+          <div class="checkout">Checkout</div>
+          <div class="view-cart">View Cart</div>
+        </div>
+      </div>
+    
+    </header>
+
+    <section class="input-block">
+      <div class="bigg-box">
+        <div class="modal">      
+         <div class="btn">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+         </div>
+          <div class="modal_contact">
+              <h1 class="h3">Formani to`ldring va biz siz bilan bog`lanamiz</h1>
+              <div class="form">
+                  <form action="#" class="form-inline contactform_select">
+                  <div class="input-group">
+                      <div class="input-group-addon"><i class="fa fa-user " aria-hidden="true"></i>
+                      </div>
+                      <input class="contactform_name form-control" type="text" placeholder="Ismingiz" required minlength="2" name="name">
+                  </div>            
+                  <div class="input-group">
+                      <div class="input-group-addon contactform_phone"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                      <input class="contactform_phone form-control" type="text" placeholder="Tlefon rqamingiz" required name="phone">
+                  </div>            
+                  <div class="input-group">
+                      <div class="input-group-addon contactform_mail"><i class="fa fa-envelope" aria-hidden="true" ></i>
+                      </div>
+                      <input class="contactform_mail form-control" type="email" placeholder="E-mail"  required name="mail">
+                  </div>
+                  <div class="input-group">
+                  <textarea cols="30" rows="3" class="form-control-3" placeholder="Some massage" name="message"></textarea>
+
+                  </div>
+                  <div class="police center-block">
+                      <div class="center-block text-center">
+                        
+                      </div>
+                  </div>
+                  <button type="submit" class="btn-0">Jo`natish</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+      
+   
+      </div>
+    
+    </section>
+
+    <div class="input-block">
+      <div class="small-box">
+        <div class="thanks">
+          <p class="some-text">E`tiboringiz uchun raxmat!<br>Tez orada siz bilan bog`lanamiz.</p>
+          <a href="../index.html"> <button class="back btn-0">Bosh sahifga qaytish</button>
+          </a>
+         
+        </div>
+        <div class="overlay">
+        </div>
+      </div>
+    
+    </div>
+    
+
+    <section class="shop-section">
+      <div class="card-wrapper">
+
+        <!-- fool-1 -->
+        
+      <div class="fool-1">
+        <div data-id="1" class="card-item">
+          <img src="../img/b-1.jpg" class="image" />
+          <div class="details">
+            <h3>Item Name</h3>
+            <p>
+              <span
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+              >
+
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+        <!-- item 2 -->
+        <div data-id="2" class="card-item">
+          <img src="../img/b-2.jpg" class="image" />
+          <div class="details">
+            <h3>Item Name</h3>
+            <p>
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </span>
+
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 3 -->
+        <div data-id="3" class="card-item">
+          <img src="../img/b-3.jpg" class="image" />
+          <div class="details">
+            <h3>Item Name</h3>
+            <p>
+              <span
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+              >
+
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 3 -->
+        <div data-id="6" class="card-item">
+          <img src="../img/b-3.jpg" class="image" />
+          <div class="details">
+            <h3>Item Name</h3>
+            <p>
+              <span
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+              >
+
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- fool-2 -->
+      <div class="fool-1">
+        <div data-id="4" class="card-item">
+          <img src="../img/b-1.jpg" class="image" />
+          <div class="details">
+            <h3>Item Name</h3>
+            <p>
+              <span
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+              >
+
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+        <!-- item 2 -->
+        <div data-id="5" class="card-item">
+          <img src="../img/b-2.jpg" class="image" />
+          <div class="details">
+            <h3>Item Name</h3>
+            <p>
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </span>
+
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 3 -->
+        <div data-id="6" class="card-item">
+          <img src="../img/b-3.jpg" class="image" />
+          <div class="details">
+            <h3>Item Name</h3>
+            <p>
+              <span
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+              >
+
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 3 -->
+        <div data-id="6" class="card-item">
+          <img src="../img/b-3.jpg" class="image" />
+          <div class="details">
+            <h3>Item Name</h3>
+            <p>
+              <span
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+              >
+
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+        <!-- fool-3 -->
+        <div class="fool-1">
+          <div data-id="7" class="card-item">
+            <img src="../img/b-1.jpg" class="image" />
+            <div class="details">
+              <h3>Item Name</h3>
+              <p>
+                <span
+                  >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+                >
+  
+                <span class="price">Price: $23.44</span>
+                <span class="add-to-cart-btn">Add To Cart</span>
+              </p>
+            </div>
+          </div>
+          <!-- item 2 -->
+          <div data-id="8" class="card-item">
+            <img src="../img/b-2.jpg" class="image" />
+            <div class="details">
+              <h3>Item Name</h3>
+              <p>
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </span>
+  
+                <span class="price">Price: $23.44</span>
+                <span class="add-to-cart-btn">Add To Cart</span>
+              </p>
+            </div>
+          </div>
+  
+          <!-- product 3 -->
+          <div data-id="9" class="card-item">
+            <img src="../img/b-3.jpg" class="image" />
+            <div class="details">
+              <h3>Item Name</h3>
+              <p>
+                <span
+                  >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+                >
+  
+                <span class="price">Price: $23.44</span>
+                <span class="add-to-cart-btn">Add To Cart</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+          <!-- fool-4 -->
+      <div class="fool-1">
+        <div data-id="10" class="card-item">
+          <img src="../img/b-1.jpg" class="image" />
+          <div class="details">
+            <h3>Item Name</h3>
+            <p>
+              <span
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+              >
+
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+        <!-- item 2 -->
+        <div data-id="11" class="card-item">
+          <img src="../img/b-2.jpg" class="image" />
+          <div class="details">
+            <h3>Item Name</h3>
+            <p>
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </span>
+
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 3 -->
+        <div data-id="12" class="card-item">
+          <img src="../img/b-3.jpg" class="image" />
+          <div class="details">
+            <h3>Item Name</h3>
+            <p>
+              <span
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+              >
+
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+            <!-- fool-5 -->
+            <div class="fool-1">
+              <div data-id="13" class="card-item">
+                <img src="../img/b-1.jpg" class="image" />
+                <div class="details">
+                  <h3>Item Name</h3>
+                  <p>
+                    <span
+                      >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+                    >
+      
+                    <span class="price">Price: $23.44</span>
+                    <span class="add-to-cart-btn">Add To Cart</span>
+                  </p>
+                </div>
+              </div>
+              <!-- item 2 -->
+              <div data-id="14" class="card-item">
+                <img src="../img/b-2.jpg" class="image" />
+                <div class="details">
+                  <h3>Item Name</h3>
+                  <p>
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </span>
+      
+                    <span class="price">Price: $23.44</span>
+                    <span class="add-to-cart-btn">Add To Cart</span>
+                  </p>
+                </div>
+              </div>
+      
+              <!-- product 3 -->
+              <div data-id="15" class="card-item">
+                <img src="../img/b-3.jpg" class="image" />
+                <div class="details">
+                  <h3>Item Name</h3>
+                  <p>
+                    <span
+                      >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+                    >
+      
+                    <span class="price">Price: $23.44</span>
+                    <span class="add-to-cart-btn">Add To Cart</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+      </div>
+    </section>
+
+
+    
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>
